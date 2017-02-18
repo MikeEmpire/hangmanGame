@@ -37,7 +37,7 @@ window.onload = function() {
             myButtons.appendChild(letters);
             letters.appendChild(list);
         }
-    }
+    };
 
 
     // Select Catagory
@@ -49,7 +49,7 @@ window.onload = function() {
         } else if (chosenCategory === categories[2]) {
             catagoryName.innerHTML = "The Chosen Category Is Cities";
         }
-    }
+    };
 
     // Create geusses ul
     result = function() {
@@ -71,7 +71,7 @@ window.onload = function() {
             wordHolder.appendChild(correct);
             correct.appendChild(guess);
         }
-    }
+    };
 
     // Show lives
     comments = function() {
@@ -84,13 +84,13 @@ window.onload = function() {
                 showLives.innerHTML = "You Win!";
             }
         }
-    }
+    };
 
     // Animate man
     var animate = function() {
         var drawMe = lives;
         drawArray[drawMe]();
-    }
+    };
 
 
     // Hangman
@@ -109,14 +109,14 @@ window.onload = function() {
         context.beginPath();
         context.arc(60, 25, 10, 0, Math.PI * 2, true);
         context.stroke();
-    }
+    };
 
     draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
 
         context.moveTo($pathFromx, $pathFromy);
         context.lineTo($pathTox, $pathToy);
         context.stroke();
-    }
+    };
 
     frame1 = function() {
         draw(0, 150, 150, 150);
@@ -177,8 +177,8 @@ window.onload = function() {
             } else {
                 comments();
             }
-        }
-    }
+        };
+    };
 
 
     // Play
@@ -203,7 +203,7 @@ window.onload = function() {
         comments();
         selectCat();
         canvas();
-    }
+    };
 
     play();
 
@@ -230,5 +230,5 @@ window.onload = function() {
         showClue.innerHTML = "";
         context.clearRect(0, 0, 400, 400);
         play();
-    }
-}
+    };
+};
