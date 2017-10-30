@@ -1,0 +1,36 @@
+{
+  "name": "hangmangame",
+  "version": "1.0.0",
+  "description": "Hangman game made using javascript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwiftMike/hangmanGame.git"
+  },
+  "keywords": [
+    "hangman"
+  ],
+  "author": "Michael Olie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwiftMike/hangmanGame/issues"
+  },
+  "homepage": "https://github.com/SwiftMike/hangmanGame#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
+    "charming": "^2.0.1",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
